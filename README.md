@@ -2,6 +2,8 @@
 
 This project is a simple web application that allows users to calculate their net salary based on their gross salary and various tax allowances in Hungary. The calculator updates results in real-time as users modify the input values and selected allowances.
 
+![preview](./preview.png)
+
 ## Features
 
 - **Enter Gross Salary**: Users can input their gross salary in HUF.
