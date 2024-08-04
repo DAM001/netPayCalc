@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruttó-Nettó Kalkulátor</title>
+    <link rel="stylesheet" href="color.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bruttó-Nettó Kalkulátor</h1>
+        <p class="disclaimer"><b>Megjegyzés:</b> Ezt az oldalt ChatGPT segítségével készítettem, kizárólag saját felelősségre használd!</p>
+
+        <label for="brutto">Add meg a bruttó bért (HUF):</label>
+        <input type="number" id="brutto" placeholder="500000" step="1000">
+        <p id="employerCost"></p>
+        <p><b>Bruttó bér:</b> Az a teljes összeg, amit levonások előtt keresel.</p>
+        <p><b>Nettó bér:</b> Az az összeg, amit levonások után kézhez kapsz (körülbelül 67%).</p>
+
+        <h2 id="netto"></h2>
+        <h3 id="nettoPercentage">(67%)</h3>
+
+        <h2>Kedvezmények:</h2>
+        <div class="modifiers">
+            <label class="checkbox-wrapper">
+                <input type="checkbox" id="under25" value="under25"> 25 év alatti kedvezmény
+            </label>
+            <p> - Csökkenti a személyi jövedelemadót, körülbelül 7%-kal.</p>
+            <label class="checkbox-wrapper">
+                <input type="checkbox" id="illness" value="illness"> Betegségi kedvezmény
+            </label>
+            <p> - Meghatározott betegségek esetén, körülbelül 2%-os kedvezmény.</p>
+            <label class="checkbox-wrapper">
+                <input type="checkbox" id="firstMarried" value="firstMarried"> Első házasok kedvezménye
+            </label>
+            <p> - Az első házasságkötést követően két éven át, havi 5% adóalap-kedvezmény.</p>
+            <label class="checkbox-wrapper">
+                <input type="checkbox" id="family" value="family"> Családi adókedvezmény
+            </label>
+            <p> - Csökkenti a személyi jövedelemadót, körülbelül 5%-kal.</p>
+            <label class="checkbox-wrapper">
+                <input type="checkbox" id="under30Mother" value="under30Mother"> 30 év alatti anyák kedvezménye
+            </label>
+            <p> - Gyermekvállalás után járó kedvezmény, körülbelül 5%-kal.</p>
+            <label class="checkbox-wrapper">
+                <input type="checkbox" id="manyChildren" value="manyChildren"> Három vagy több gyermekes kedvezmény
+            </label>
+            <p> - Három vagy több gyermek után járó kedvezmény, körülbelül 10%-os kedvezmény.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
